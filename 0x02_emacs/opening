@@ -1,11 +1,2 @@
-; disable the binding that has backspace call "help"      
-; enable it do the same as delete
-     (global-set-key [?\C-h] 'delete-backward-char)
-     (global-set-key [?\C-x ?h] 'help-command) ;; overrides mark-whole-buffer
-;disallow tabs
-     (setq-default indent-tabs-mode nil)
-;set indenting to 4 places instead of default 2
-     (defun indentk ()
-     (setq c-basic-offset 4))
-     (add-hook 'c-mode-hook 'indentk)
-C-x C-f
+Ctrl-x 
+Ctrl-f
